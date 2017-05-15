@@ -11,7 +11,8 @@ public class Rate_Test {
 
 	@Test
 	public void test() {
-		
+	
+		//Checks that a known credit score returns a known interest rate
 		ArrayList<RateDomainModel> rates = RateDAL.getAllRates();
 		System.out.println ("Rate Size:" + rates.size());
 		assert(rates.size() > 0);
